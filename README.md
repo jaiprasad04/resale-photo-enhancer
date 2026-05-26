@@ -1,12 +1,15 @@
-# 🚀 Resale Photo Enhancer — High-Conversion AI E-Commerce Studio
+# 🛒 Resale Photo Enhancer — Open-Source AI Product Photo Studio for Online Resellers (Free Photoroom Alternative)
 
-> **A beautifully designed, premium AI product studio for online resellers.** Built with Next.js (App Router), this application provides a self-contained SaaS boilerplate for swapping backgrounds, enhancing product details, and generating commercial-ready listing imagery using the MuAPI AI engine.
+> **Turn snapshot reseller photos into professional listing imagery in one click.** A production-ready, self-hostable Next.js SaaS boilerplate that swaps cluttered backgrounds for clean studio-grade scenes — purpose-built for sellers on eBay, Poshmark, Depop, Vinted, Mercari, Etsy, and Facebook Marketplace. A free open-source alternative to Photoroom, Pixelcut, and ZMO.ai — powered by the MuAPI AI engine.
+
+**Tech stack:** Next.js 14 (App Router) · Prisma · PostgreSQL · NextAuth (Google OAuth) · Stripe · Tailwind CSS · MuAPI
+**Use cases:** eBay product listings · Poshmark closet photography · Depop snapshot upgrades · Vinted listings · Mercari background swaps · Facebook Marketplace ads · Etsy product shots · Shopify catalog cleanup
 
 ## 🌐 Project Repository
 
 **GitHub Repository:** [github.com/SamurAIGPT/resale-photo-enhancer](https://github.com/SamurAIGPT/resale-photo-enhancer)
 
-Experience the modern design. Sign in with Google to explore the background templates, custom prompt inputs, credit integrations, and download history directly.
+Sign in with Google to explore the background template gallery, custom prompt inputs, Stripe credit packs, and download history.
 
 ---
 
