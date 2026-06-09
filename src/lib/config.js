@@ -3,6 +3,7 @@
  */
 
 const config = {
+  appName: "Resale Photo Enhancer",
   auth: {
     google: {
       clientId: process.env.GOOGLE_CLIENT_ID,
