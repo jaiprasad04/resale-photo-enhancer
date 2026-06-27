@@ -290,7 +290,7 @@ export default function HomePage() {
                 <button
                   key={r}
                   onClick={() => setAspectRatio(r)}
-                  className={`flex-1 text-[10px] font-medium py-1 rounded-sm border transition-all cursor-pointer ${aspectRatio === r ? "border-neutral-900 bg-neutral-900 text-white" : "border-neutral-200 text-neutral-500 hover:border-neutral-400"}`}
+                  className={`flex-1 text-[10px] font-medium py-1 rounded-sm border transition-all cursor-pointer ${aspectRatio === r ? "border-primary bg-primary text-primary-btn-text shadow-xs" : "border-neutral-200 text-neutral-500 hover:border-neutral-400"}`}
                 >
                   {r}
                 </button>
@@ -307,7 +307,7 @@ export default function HomePage() {
               <button
                 key={id}
                 onClick={() => setActiveTab(id)}
-                className={`flex-1 flex items-center justify-center gap-1.5 py-2.5 text-[11px] font-semibold border-b-2 transition-all cursor-pointer ${activeTab === id ? "border-neutral-900 text-neutral-900" : "border-transparent text-neutral-400 hover:text-neutral-600"}`}
+                className={`flex-1 flex items-center justify-center gap-1.5 py-2.5 text-[11px] font-semibold border-b-2 transition-all cursor-pointer ${activeTab === id ? "border-primary text-primary" : "border-transparent text-neutral-400 hover:text-neutral-600"}`}
               >
                 <Icon className="text-[9px]" />
                 {label}
@@ -350,7 +350,7 @@ export default function HomePage() {
                           <button
                             key={tpl.id}
                             onClick={() => setSelectedTemplate(tpl)}
-                            className={`relative aspect-square rounded-sm overflow-hidden border-2 transition-all cursor-pointer group ${selectedTemplate?.id === tpl.id ? "border-neutral-900" : "border-transparent hover:border-neutral-300"}`}
+                            className={`relative aspect-square rounded-sm overflow-hidden border-2 transition-all cursor-pointer group ${selectedTemplate?.id === tpl.id ? "border-primary" : "border-transparent hover:border-neutral-300"}`}
                           >
                             <img
                               src={tpl.thumbnail_url}
@@ -359,15 +359,15 @@ export default function HomePage() {
                               loading="lazy"
                             />
                             {selectedTemplate?.id === tpl.id && (
-                              <div className="absolute inset-0 bg-neutral-900/20 flex items-center justify-center">
-                                <div className="w-4 h-4 rounded-full bg-neutral-900 flex items-center justify-center">
+                              <div className="absolute inset-0 bg-primary/20 flex items-center justify-center">
+                                <div className="w-4 h-4 rounded-full bg-primary flex items-center justify-center">
                                   <svg
                                     viewBox="0 0 10 8"
-                                    className="w-2.5 h-2.5 text-white fill-current"
+                                    className="w-2.5 h-2.5 text-primary-btn-text fill-current"
                                   >
                                     <path
                                       d="M1 4l2.5 2.5L9 1"
-                                      stroke="white"
+                                      stroke="currentColor"
                                       strokeWidth="1.5"
                                       fill="none"
                                       strokeLinecap="round"
@@ -393,7 +393,7 @@ export default function HomePage() {
                   placeholder="e.g. Place the product on a rustic wooden table under warm golden hour sunlight with blurred garden foliage in the background..."
                   value={customPrompt}
                   onChange={(e) => setCustomPrompt(e.target.value)}
-                  className="w-full h-28 p-2.5 text-xs border border-neutral-200 rounded-sm bg-neutral-50 focus:bg-white focus:border-neutral-900 outline-none resize-none transition-colors leading-relaxed"
+                  className="w-full h-28 p-2.5 text-xs border border-neutral-200 rounded-sm bg-neutral-50 focus:bg-white focus:border-primary outline-none resize-none transition-colors leading-relaxed"
                 />
                 <p className="text-[10px] text-neutral-400 mt-1.5 leading-relaxed">
                   Describe the surface, lighting, and background scene. Be as
@@ -409,7 +409,7 @@ export default function HomePage() {
               <button
                 onClick={handleEnhance}
                 disabled={generating || !inputUrl}
-                className="w-full py-2 bg-accent hover:bg-accent-hover disabled:bg-neutral-100 disabled:text-neutral-400 disabled:cursor-not-allowed text-neutral-900 font-semibold text-xs rounded-sm transition-all flex items-center justify-center gap-2 cursor-pointer shadow-sm"
+                className="w-full py-2 bg-primary hover:bg-primary-hover disabled:bg-neutral-100 disabled:text-neutral-400 disabled:cursor-not-allowed text-primary-btn-text font-semibold text-xs rounded-sm transition-all flex items-center justify-center gap-2 cursor-pointer shadow-sm"
               >
                 {generating ? (
                   <>
@@ -528,7 +528,7 @@ export default function HomePage() {
                       setSelectedHistoryItem(item);
                       setCurrentCreation(null);
                     }}
-                    className={`h-16 w-16 flex-shrink-0 border-2 rounded-sm overflow-hidden transition-all cursor-pointer ${activeDisplay?.id === item.id ? "border-neutral-900" : "border-neutral-200 hover:border-neutral-400"}`}
+                    className={`h-16 w-16 flex-shrink-0 border-2 rounded-sm overflow-hidden transition-all cursor-pointer ${activeDisplay?.id === item.id ? "border-primary" : "border-neutral-200 hover:border-neutral-400"}`}
                   >
                     <img
                       src={item.outputUrl || item.inputUrl}

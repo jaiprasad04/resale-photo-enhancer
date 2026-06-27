@@ -1,5 +1,21 @@
 @import "tailwindcss";
 
+:root {
+  --bg-page: #f4f4f5;
+  --bg-card: #ffffff;
+  --bg-card-hover: #fafafa;
+  --bg-elevated: #f4f4f5;
+  --divider: #e4e4e7;
+  --primary: #8b5cf6;
+  --primary-hover: #7c3aed;
+  --primary-text: #09090b;
+  --secondary-text: #71717a;
+  --primary-btn-text: #ffffff;
+  --glass-bg: rgba(255, 255, 255, 0.75);
+  --glass-border: rgba(228, 228, 231, 0.6);
+  --glass-hover: rgba(244, 244, 245, 0.8);
+}
+
 @theme {
   --font-sans: var(--font-inter), sans-serif;
   --font-outfit: var(--font-inter), sans-serif;
