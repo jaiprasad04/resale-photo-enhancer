@@ -13,6 +13,8 @@
 
 > 🎨 **[Explore 50+ more open-source AI apps →](https://github.com/Anil-matcha/awesome-generative-ai-apps)**
 
+https://github.com/user-attachments/assets/5562b09c-e872-486a-b049-5b59dcb8dac8
+
 ## 🌐 Project Repository
 
 **GitHub Repository:** [github.com/SamurAIGPT/resale-photo-enhancer](https://github.com/SamurAIGPT/resale-photo-enhancer)
